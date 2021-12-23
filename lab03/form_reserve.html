@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Form demo</title>
+</head>
+<body>
+ <h3>Hotel booking</h3>
+ <form method="POST" action="https://angsila.cs.buu.ac.th/~wittawas/642/88726059/services/post.php">
+    <label for="roomtype">Room type</label><br>
+    <select name="roomtype">
+    <option value="0">--Select one--</option>
+    <option value="1">Standaed</option>
+    <option value="2">Luxury</option>
+    <option value="3">Deluxe</option>
+    </select><br>
+    <br>
+    <label for="numguest">Number of Guests</label><br>
+    <select name="numguest">
+    <option value="0">--Select one--</option>
+    <option value="1">1-2</option>
+    <option value="2">3-4</option>
+    <option value="3">5-6</option>
+    <option value="4">7-8</option>
+    </select>
+    <br><br>
+ <label for="name">Name</label>
+ <input type="text" name="name" id="name">
+ <br><br>
+ <label for="email">Email</label>
+ <input type="text" name="email" id="email">
+ <br><br>
+ <label for="arrivaldate">Arrival</label>
+ <input type="date" id="arrivaldate" name="arrivaldate">
+ <input type="time" id="arrivaltime" name="arrivaltime">
+ <br><br>
+ <label for="departuredate">Departure</label>
+ <input type="date" id="departuredate" name="departuredate">
+ <input type="time" id="departuretime" name="departuretime">
+ <br><br>
+ <label for="pickup">Free pickup</label><br>
+ <input type="radio" name="pickup" id="pickup" value="Yes">Yes,sure!
+ <br>
+ <input type="radio" name="pickup" id="pickup" value="No">No, I already rented a car.
+ <br><br>
+ <label for="flightnum">Fright Number</label>
+ <input type="text" name="flightnum" id="flightnum">
+ <br><br>
+ 
+ Other requests<br>
+ <Textarea name="otherreq" id="otherreq" rows="5" cols="50"></Textarea>
+ <br><br>
+ <input type="submit" value="Complete Reservation">
+
+ </form>
+</body>
+</html>
